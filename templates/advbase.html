@@ -61,7 +61,7 @@ td:hover span{
       <li class="pure-menu-selected"><a href="#">{{_("Share")}}</a>
       </li>
     {% else -%}
-      <li><a href="/advshare">{{_("Share")}}</a></li>
+      <li><a href="/advarchive">{{_("Share")}}</a></li>
     {% endif -%}
     {% if advcurr=='urlfilter' -%}
       <li class="pure-menu-selected"><a href="#">{{_("Url Filter")}}</a>
@@ -74,6 +74,12 @@ td:hover span{
       </li>
     {% else -%}
       <li><a href="/advimport">{{_("Import Feeds")}}</a></li>
+    {% endif -%}
+    {% if advcurr=='uploadcoverimage' -%}
+      <li class="pure-menu-selected"><a href="#">{{_("Cover Image")}}</a>
+      </li>
+    {% else -%}
+      <li><a href="/advuploadcoverimage">{{_("Cover Image")}}</a></li>
     {% endif -%}
     </ul>
    </div>
